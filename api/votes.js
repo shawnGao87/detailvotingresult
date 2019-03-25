@@ -60,9 +60,9 @@ router.get("/:num", (req, res) => {
 				})
 			)
 			.close.catch(e => console.log(e));
-		//close connection after reading data
-		client.close();
 	});
+	//close connection after reading data
+	client.close();
 });
 
 module.exports = router;
